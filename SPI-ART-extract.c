@@ -12,17 +12,17 @@ int main(int argc,char **argv)
 		scanf("%s",src_PATH);
 	}
 	FILE  *src=NULL,*dst=NULL;
-	fpos_t src_lenth=0,dst_lenth=0;
+	long src_lenth=0;
 	if((src=fopen(src_PATH,"rb"))==NULL) 
 	{
 		fprintf(stdout,"File not exist!\n");
 		goto error;
 	}		
 	fseek(src,0L,SEEK_END);						//move FILE pointer to FILE_END
+	src_lenth=ftell(src);
 	
 	
-	
-	if(fgetpos(src,&src_lenth)) goto error;		//get FILE lenth
+	//if(fgetpos(src,&src_lenth)) goto error;		//get FILE lenth
 	if(src_lenth==0)							//empty src file error
 	{
 		fprintf(stdout,"Invaild PATH or File name!\n");
