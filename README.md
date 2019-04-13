@@ -1,4 +1,7 @@
 # Router-ART-Extract
+
+**[中文](/README-ZH-CN.md)**
+
 Extract ART Parameter from SPI flash or Openwrt system
 
 # Usage 
