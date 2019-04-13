@@ -19,6 +19,8 @@ Or a Router based on Openwrt(Extract ART from system).
 
 2. Specify the path for the file location（THE BIN files read from SPI flash)
 
+like ./SPI-ART-extract ./XXX.bin Or open it and type the BIN file PATH.
+
 3. You will get ART_OUTPUT.BIN where the executable file is located.
 
 ## Extract ART from Openwrt
@@ -33,4 +35,4 @@ Or a Router based on Openwrt(Extract ART from system).
 
 1. clone this repo
 
-2. `gcc SPI-ART-extract.c -o SPI-ART-extract`
+2. `gcc SPI-ART-extract.c -o SPI-ART-extract -std=gnu99`

@@ -19,6 +19,8 @@
 
 2. 选择编程器固件所在路径
 
+在命令行下使用./SPI-ART-extract ./XXX.bin 或者 打开可执行文件再输入BIN文件路径，两种方法均可。
+
 3. 在执行目录下你会得到ART_OUTPUT.BIN
 
 ## 从Openwrt路由器中获取ART参数
@@ -33,4 +35,4 @@
 
 1. git 克隆
 
-2. 执行`gcc SPI-ART-extract.c -o SPI-ART-extract`
+2. 执行`gcc SPI-ART-extract.c -o SPI-ART-extract -std=gnu99`
