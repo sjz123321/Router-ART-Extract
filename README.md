@@ -25,3 +25,9 @@ Or a Router based on Openwrt(Extract ART from system).
 2. upload file to your router by SCP FTP ...
 
 3.  `chmod +x OPENWRT_ART_extract.sh && ./OPENWRT_ART_extract.sh`
+
+## Compile by yourself
+
+1. clone this repo
+
+2. `gcc SPI-ART-extract.c -o SPI-ART-extract`
