@@ -6,7 +6,7 @@ case $mtd_flag in
 		echo "Error, not found ART block!"
 		;;
 	1)
-		cat /dev/mtdblock4 > /tmp/ART.BIN
+		dd if=/dev/mtdblock4  of=/tmp/ART.BIN
 		echo "ART extract successfully"
 		echo "save file to /tmp/ART.BIN"
 		case $lrzsz_flag in
